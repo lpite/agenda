@@ -8,7 +8,7 @@ type HeaderWithLabelProps = {
 export default function HeaderWithLabel({ pageName }: HeaderWithLabelProps) {
   const router = useNavigate();
   return (
-    <header className="text-blue-900 font-medium flex items-center justify-center w-full pt-7">
+    <header className="text-blue-900 dark:text-blue-600 font-medium flex items-center justify-center w-full pt-7">
       <button className="absolute left-4">
         <ChevronLeft onMouseDown={() => router(-1)} width={24} />
       </button>

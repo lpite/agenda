@@ -18,13 +18,13 @@ export default function MainPage() {
         <div className="flex pt-2.5 gap-1.5">
           <button
             onMouseDown={() => setPage("schedule")}
-            className={`flex px-7 py-3 ${page === "schedule" ? "bg-blue-900 text-white" : "text-blue-900 bg-blue-50"} rounded-2xl  gap-1.5`}
+            className={`flex px-7 py-3 ${page === "schedule" ? "bg-blue-900 dark:bg-blue-600 text-white" : "text-blue-900 bg-blue-50"} rounded-2xl  gap-1.5`}
           >
             <CalendarDaysIcon width={24} /> Розклад
           </button>
           <button
             onMouseDown={() => setPage("journals")}
-            className={`flex px-7 py-3 ${page === "journals" ? "bg-blue-900 text-white" : "text-blue-900 bg-blue-50"} rounded-2xl  gap-1.5`}
+            className={`flex px-7 py-3 ${page === "journals" ? "bg-blue-900 dark:bg-blue-600 text-white" : "text-blue-900 bg-blue-50"} rounded-2xl  gap-1.5`}
           >
             <TableCellsIcon width={24} /> Журнал
           </button>

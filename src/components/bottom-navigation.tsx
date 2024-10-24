@@ -4,13 +4,13 @@ import { NavLink } from "react-router-dom";
 export default function BottomNavigation() {
   return (
     <nav
-      className="h-12 flex items-center justify-around w-full fixed bottom-0 py-1.5 border dark:border-transparent border-slate-300 bg-zinc-50 dark:bg-gray-900"
+      className="h-12 flex items-center justify-around w-full fixed bottom-0 py-1.5 border dark:border-transparent border-slate-300 bg-zinc-50 dark:bg-zinc-900"
       style={{ boxShadow: "0px -4px 4px 0px rgba(0, 0, 0, 4%)" }}
     >
       <NavLink
         to="/"
         className={({ isActive }) =>
-          `flex flex-col items-center justify-center leading-none ${isActive ? "text-blue-900 dark:text-blue-300" : "text-blue-300 dark:text-blue-900"}`
+          `flex flex-col items-center justify-center leading-none ${isActive ? "text-blue-900 dark:text-blue-300" : "text-blue-300 dark:text-blue-800"}`
         }
       >
         <HomeIcon width={24} />
@@ -19,7 +19,7 @@ export default function BottomNavigation() {
       <NavLink
         to="/profile"
         className={({ isActive }) =>
-          `flex flex-col items-center justify-center leading-none ${isActive ? "text-blue-900 dark:text-blue-300" : "text-blue-300 dark:text-blue-900"}`
+          `flex flex-col items-center justify-center leading-none ${isActive ? "text-blue-900 dark:text-blue-300" : "text-blue-300 dark:text-blue-800"}`
         }
       >
         <UserIcon width={24} />

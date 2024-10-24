@@ -8,7 +8,7 @@ export default function RatingPage() {
         {Array(100)
           .fill(0)
           .map((_, i) => (
-            <div className="text-slate-950 border rounded-lg border-slate-300 p-2 mb-1.5">
+            <div className="text-slate-950 dark:text-white border rounded-lg border-slate-300 dark:border-slate-600 p-2 mb-1.5">
               {i + 1}. Пес патрон
             </div>
           ))}

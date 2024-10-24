@@ -18,7 +18,7 @@ export default function ProfilePage() {
 
         <Link
           to="/rating"
-          className="flex justify-between bg-blue-900 text-white p-2 mt-5 rounded-lg"
+          className="flex justify-between bg-blue-900 dark:bg-blue-600 text-white p-2 mt-5 rounded-lg"
         >
           <div className="flex">
             <AcademicCapIcon width={24} />

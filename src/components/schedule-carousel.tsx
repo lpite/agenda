@@ -27,7 +27,7 @@ export default function ScheduleCarousel() {
                   </button>
                 </div>
               </div>
-              <div className="border border-solid border-slate-300 p-2 rounded-lg">
+              <div className="border border-solid border-slate-300 dark:border-slate-600 p-2 rounded-lg">
                 <div className="flex justify-between text-slate-300">
                   <span>#3 11:10 - 12:30</span>
                   <span>Електротехнічна</span>

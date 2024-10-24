@@ -33,7 +33,7 @@ export default function AppearancePage() {
           <ColorThemeToggle
             toggled={theme === "dark"}
             onToggle={() => setTheme("dark")}
-            activeClass="bg-blue-900 text-blue-50"
+            activeClass="bg-blue-900 dark:bg-blue-600 text-blue-50"
           >
             <MoonIcon width={24} />
             <span>Темна</span>
@@ -59,7 +59,7 @@ function ColorThemeToggle({
 }: ColorThemeToggleProps) {
   return (
     <label
-      className={`flex items-center justify-center gap-1 rounded-lg h-10 w-full border border-slate-300 ${toggled ? activeClass + " border-transparent" : ""}`}
+      className={`flex items-center justify-center gap-1 rounded-lg h-10 w-full border border-slate-300  ${toggled ? activeClass + " border-transparent" : "dark:border-slate-600"}`}
     >
       <input
         type="radio"
